@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <meta http-equiv="X-UA Compatible" content="ie=edge">
+    <link rel="stylesheet" href="File.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="top">
+        <div class="container">
+            <!-- Hamburger Icon -->
+            <div id="slidebar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Slidebar Menu -->
+            <div id="slidebar" class="hidden">
+                <div class="close-btn"><span class="Dashboard">Dashboard</span>&times;</div>
+                <div class="slidebar-links">
+                    
+                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
+                    <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                    <a href="#"><i class="fa-solid fa-user"></i> Sign-in</a>
+                </div>
+            </div>
+
+
+            <div class="left">
+                <li id="home"><a href="#">Home</a></li>
+                <li id="Categories"><a href="Category.html">Categories</a></li>
+                <li id="About"><a href="#about-section">About</a></li>
+            </div>
+
+
+
+            <div class="mid">
+                <form>
+                    <input type="search" name="Search" placeholder="Search">
+                </form>
+            </div>
+
+
+
+            <div class="right">
+                <button class="btn"><a id="id2" href="/Project 2/Cart.html"><i
+                            class="fa-solid fa-cart-shopping"></i></a></button>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="logo">
+    </div>
+    <section class="About" id="about-section">
+        <div class="images">
+            <div id="i1"><img src="restaurant.jpg" height="200px" width="204px">
+                <p class="p1">Step into elegance and enjoy a fine dining experience like never before.✨
+                    A warm and cozy ambiance perfect for a romantic dinner or family gathering.❤️
+                    Delight your senses with gourmet flavors in a beautiful setting.🍷🍽️
+                    Reserve your table now and make unforgettable memories!🎉
+                </p>
+            </div>
+            <div id="i2">
+                <img src="Indian thali.jpeg" height="200px" width="204px">
+                <p class="p1">Experience the rich flavors of India with our authentic and delicious thali🍛
+                    A perfect blend of aromatic spices, fresh ingredients, and traditional recipes.🌿
+                    Indulge in a feast that satisfies your soul with every bite.😋
+                    Order now and enjoy a wholesome, homemade-style Indian meal!</p>
+            </div>
+            <div id="i3">
+                <img src="Premium Vector _ Delivery delivery neon sign.jpeg" height="200px" width="204px">
+                <p class="p1">Craving your favorite meal? We’ve got you covered!🚀
+                    Fast and reliable delivery to bring your food straight to your doorstep📦
+                    Order now and enjoy delicious flavors from the comfort of your home!🏡
+                    Your next great meal is just a click away!🍕🍜</p>
+            </div>
+
+        </div>
+    </section>
+    <div class="scroll"><a href="#top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #fff;"></i></a></div>
+    <script>
+        const toggleBtn = document.getElementById('slidebar-toggle');
+        const slidebar = document.getElementById('slidebar');
+        const closeBtn = document.querySelector('.close-btn');
+
+        toggleBtn.addEventListener('click', () => {
+            slidebar.classList.add('show');
+            slidebar.classList.remove('hidden');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            slidebar.classList.remove('show');
+            setTimeout(() => {
+                slidebar.classList.add('hidden');
+            }, 300);
+        });
+
+        // Optional: Close when clicking outside the sidebar
+        document.addEventListener('click', (e) => {
+            if (!slidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
+                if (slidebar.classList.contains('show')) {
+                    slidebar.classList.remove('show');
+                    setTimeout(() => {
+                        slidebar.classList.add('hidden');
+                    }, 300);
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

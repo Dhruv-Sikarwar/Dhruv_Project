@@ -1,0 +1,263 @@
+
+body
+{
+    background-image: url(body.gif);
+    
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #1f2437;
+    padding-top: 2px;
+    border-radius: 5px;
+}
+
+.mid {
+    margin-top: 2px;
+    display: flex;
+    position: absolute;
+    left: 600px;
+}
+
+/* Right section is here The cart */
+.right {
+    position: relative;
+    left: 1450px;
+}
+
+.btn {
+    background-color: black;
+    font-size: larger;
+}
+
+#id2 {
+    color: white;
+}
+
+.btn:hover {
+    color: aliceblue;
+}
+
+.btn:hover::after {
+    content: "Cart";
+    position: absolute;
+    top: 30px;
+    right: 1.5%;
+    color: black;
+    font-size: medium;
+
+}
+
+
+/* Till here images section */
+.logo {
+    border: 2px dotted black;
+    width: 300px;
+    height:100px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    left: 600px;
+    top: 50px;
+    margin-bottom: 500px;
+    background-image: url(logo2.jpg);
+    background-size: 300px;
+    background-position-x:-2px;
+    background-position-y:-73px;
+    background-repeat: no-repeat;
+    background-color: #1f2437;
+    opacity:0.9;
+}
+
+.left {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 100px;
+}
+
+.left li {
+    width: 100px;
+}
+
+.left li a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: normal;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 26px;
+    color: beige;
+}
+/* Slidebar styles */
+#slidebar {
+    position:fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+#slidebar.show {
+    left: 0;
+}
+
+#slidebar-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 13.5px;
+    left: 40px;
+    z-index: 1100;
+    color: #fff;
+}
+
+.slidebar-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.Dashboard
+{
+    font-family: 'Noto+sans';
+    font-size: 18px;
+    position: absolute;
+    right: 120px;
+    top:3.7px;
+}
+.slidebar-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#About {
+    /* margin-left: 40px;
+    margin-right: -10px; */
+    position: relative;
+    left: 8%;
+    
+}
+
+.left li a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.left li :active {
+    color: red;
+    text-decoration: solid;
+}
+
+/* #slidebar-toggle:hover::after {
+    color: white;
+    font-size: medium;
+    background-color: #1e1c1d;
+    content: "Dashboard";
+    position: absolute;
+    left: -10px;
+    top: 25px;
+} */
+
+/* left is till here */
+/* This is iamges section */
+.images {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    transition: top 13s ease;
+}
+
+#i1 {
+    position: relative;
+    left: 280px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #1e1c1d;
+}
+
+#i2 {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #1e1c1d;
+}
+
+#i3 {
+    position: relative;
+    right: 280px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #1e1c1d;
+}
+
+.p1 {
+
+    width: 200px;
+    color: aliceblue;
+    padding-left: 4px;
+    margin-bottom: -4px;
+    margin-top: -2px;
+}
+
+.scroll {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    left: 1450px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #1e1c1d;
+    border-radius: 250px;
+}
+
+.scroll:hover::after {
+    content: "Back to top";
+    position: absolute;
+    top: 45px;
+    right: 4px;
+    font-size: larger;
+    background-color: #1e1c1d;
+    border: 2px solid red;
+    color: white;
+    width: 150px;
+    padding: 2px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+.html
+{
+    scroll-behavior: smooth;
+}
